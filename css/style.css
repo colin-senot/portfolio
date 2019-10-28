@@ -128,8 +128,13 @@ nav .navbar-brand {
   margin-top: 60px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 30px;
   border-bottom: 4px solid white;
   text-transform: uppercase;
 }
 
 /* TIMELINE */
+
+.timeline-main {
+  z-index: 3;
+}
