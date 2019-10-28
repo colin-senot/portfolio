@@ -1,0 +1,139 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url("../img/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* INTRO */
+
+.intro {
+  position: relative;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.intro h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.intro p {
+  margin-bottom: 10%;
+  color: #adadad;
+}
+
+.intro .btn {
+  margin-bottom: 15%;
+  background: linear-gradient(to bottom right, #3949ab, #673ab7);
+}
+
+.intro .name2 {
+  display: inline-block;
+}
+
+
+/* MOUSE */
+
+.scroll-downs {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 200px !important;
+  margin: auto;
+  width :34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+/* NAVBAR */
+
+nav {
+  height: auto;
+  border-top: 4px solid #1565c0;
+  border-bottom: 4px solid #1565c0;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
+nav .nav-link {
+  background: #6a1b9a;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+
+nav .nav-link:hover {
+  color: #6a1b9a !important;
+  background: white;
+}
+
+nav .nav-link i {
+  margin-right: 5px;
+  margin-left: 0px;
+}
+
+.contact {
+  border: 1px solid white;
+}
+
+/* ABOUT */
+
+.about {
+  background: linear-gradient(to bottom right, #3949ab, #673ab7);
+}
+
+.about h2 {
+  color: white;
+  margin-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 4px solid white;
+  text-transform: uppercase;
+}
+
+/* TIMELINE */
+
+.timeline-main {
+  z-index: 3;
+}
